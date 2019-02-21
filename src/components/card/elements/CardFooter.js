@@ -1,6 +1,10 @@
 import React from "react";
-import getClasses from "../../../Helpers/ClassNames";
+import getClasses from "../../../Helpers/getClasses";
 
-const CardHeader = props => {
-  return <div className={getClasses("card-footer")}>{props.footerTitle}</div>;
+const CardFooter = ({children, classes}) => {
+  <div className={getClasses('card-footer', classes)}>
+        {children}
+      </div>;
 };
+
+export default CardFooter;

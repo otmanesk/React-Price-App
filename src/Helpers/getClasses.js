@@ -1,17 +1,22 @@
 
-const getClasses = (origin, ...added) =>{
+const getClasses = (origin, added) =>{
     let classes = [];
-    classes.push(origin);
-    if(added){
-        classes.push(added);
-    }
-    else{
-
-    }
-
-    [origin,...added].
+    if (origin) {
+		if (origin.constructor === Array) {
+			classes = [...classes, ...origin];
+		} else {
+			classes.push(origin)
+		}
+	}
+	if (added) {
+		if (added.constructor === Array) {
+			classes = [...classes, ...added];
+		} else {
+			classes.push(added);
+		}
+	}
+	return classes.join(' ');
 }
-
-
+	
 
 export default getClasses;
