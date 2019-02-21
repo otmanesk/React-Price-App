@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Layouts from "./pages/Layouts";
 import PriceCard from "./common/PriceCard";
 import HeroBlock from "./common/HeroBlock";
+import "./App.css";
 
 class App extends Component {
   render() {

@@ -5,7 +5,7 @@ import Footer from "../includes/Footer";
 const Layouts = props => {
   return (
     <div>
-      <Header headerTitle="logooo" />
+      <Header headerTitle="logo" />
       {props.children}
       <Footer />
     </div>
