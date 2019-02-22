@@ -1,6 +1,10 @@
 import React from "react";
 import getClasses from "../../../Helpers/getClasses";
 
-const CardHeader = props => {
-  return <div className={getClasses("card-header")}>{props.headerTitle}</div>;
+const CardHeader = ({children, classes}) => {
+  <div className={getClasses('card-header', classes)}>
+        {children}
+      </div>
 };
+
+export default CardHeader;

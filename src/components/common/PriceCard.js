@@ -7,13 +7,7 @@ const PriceCard = props => {
       <div className="card-deck mb-3 text-center">
         <div className="card mb-4 shadow-sm">
           <div className="card-header">
-            {pricing.map(
-              (item = item => {
-                return (
-                  <h4 className="my-0 font-weight-normal">{item.title}</h4>
-                );
-              })
-            )}
+            <h4>free</h4>
           </div>
           <div className="card-body">
             <h1 className="card-title pricing-card-title">
