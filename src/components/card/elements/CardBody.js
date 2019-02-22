@@ -1,10 +1,10 @@
 import React from "react";
-import getClasses from "../../../Helpers/ClassNames";
+import getClasses from "../../../Helpers/getClasses";
 
-const CardBody = props => {
+const CardBody = ({ text }) => {
   return (
     <div class="card">
-      <div className={getClasses("card-body")}>{props.text}</div>
+      <div className={getClasses("card-body")}>{text}</div>
     </div>
   );
 };

@@ -1,5 +1,3 @@
-import React from "react";
-
 const pricing = [
   {
     price: 0,
